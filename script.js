@@ -8,4 +8,14 @@ image1.src =
 image1.onLoad = function initialize() {
   canvas.width = image1.width;
   canvas.height = image1.height;
+  ctx.drawImage(image1, 0, 0);
 };
+
+class AsciiEffect {
+  #imageCellArray = [];
+  #symbols = [];
+  #pixels = [];
+  #ctx = [];
+  width = [];
+  height = [];
+}
